@@ -1,67 +1,37 @@
 <!DOCTYPE html>
 <html lang='en'>
-
+<!--TODO MORA OVA IF EKRAN WIDTH < X SINGLE PAGE DISPLAY NA FLIPBOOKOT SO KOMANDA DISPLAY STRING-->
 <head>
-    <link rel="icon" href=Images/Logo.png">
+    <title>Luka Krstik</title>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=3.0">
+    <!--svoe sranje-->
+    <link rel="icon" href=Images/Logo.png"> <!-- page ikonata ne raboti -->
+    <link href="css/style.css" rel="stylesheet">
+    <!--Bootstrap-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet">
-    <meta charset='UTF-8'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Luka Krstik</title>
-    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=3.0">
+    <!-- TURN.JS -->
+    <script type="text/javascript" src="turnjs4/extras/jquery.min.1.7.js"></script>
+    <script type="text/javascript" src="turnjs4/extras/modernizr.2.5.3.min.js"></script>
+
 </head>
-<style>
-  .header-info {
-    color: #171717;
-    font-size: 2.7rem;
-    font-family: roboto, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-  .archive{
-    color: #171717;
-    font-size: 2.7rem;
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-  .footerText {
-    color: white;
-    font-size: 1.2rem;
-    font-family: roboto, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-  .footer {
-  font-family: roboto, sans-serif;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  top: 45.07rem;
-  width: 100%;
-  background-color: #171717;
-  color: white;
-  text-align: center;
-  }
-
-</style>
-
 
 <body>
+
+<div>
+    <img src="images/Logo.jpg" width="100" height="100" class="float-left mx-auto">
+</div> <!-- slikava da se zameni so vector od printing test dizajnce -->
+
 <div class="container">
 
     <div>
         <div class="text-center">
-            <img src="images/Logo.jpg" class="" width="131" height="200" class="center mx-auto">
+            <img src="images/Logo.jpg" width="131" height="200" class="center mx-auto">
         </div>
-    </div>
+    </div> <!-- VECTOR LOGO treba zamena -->
 
     <div>
         <div class="text-center" style="list-style: none;">
@@ -70,22 +40,72 @@
             <a href="https://500px.com/p/lukakrstik" class="header-info">500px</a>
             <a class="header-info"> / </a>
             <a href="https://www.flickr.com/photos/159158532@N07/" class="header-info">Flickr</a>
-        </div>
-    </div>
-
-    <div class="row">
-        <!-- book goes here -->
+        </div> <!-- menuvanje na bojata na hover od hyperlinkot -->
     </div>
 
     <div class="text-center">
-        <a href="#" class="archive mx-0">Archive</a>
+        <div class="flipbook-viewport">
+            <div class="container">
+                <div class="flipbook">
+                    <div class="hard"><img src="images/pj images/page01.jpg" width="450px" height="318"></div>
+                    <div class="hard"><img src="images/pj images/page02.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page03.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page04.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page05.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page06.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page07.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page08.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page09.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page10.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page11.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page12.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page13.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page14.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page15.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page16.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page17.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page18.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page19.jpg" width="450px" height="318"></div>
+                    <div><img src="images/pj images/page20.jpg" width="450px" height="318"></div>
+                </div>
+            </div>
+        </div> <!-- flipbookot refinement -->
+    </div>
+
+    <div class="text-center">
+        <a href="https://fliphtml5.com/bookcase/bjubr" class="archive mx-0">Archive</a>
     </div>
 
 </div>
 
 <div class="footer">
     <p class="footerText">Contact Email: luka.krstik@protonmail.com</p>
-</div>
+</div> <!-- nov mail ne licen -->
+
+<script type="text/javascript">
+
+function loadApp() {
+    $('.flipbook').turn({
+        //900px
+		//width: 900,
+		//318px
+        //height:318,
+        elevation:50,
+        gradients: true,
+        // autocenter: true, nekako ne raboti :D
+    });
+}
+
+// Load the HTML4 version if there's not CSS transform <= COPY PASTE HEHE NEMA DA SE PRAAM DEMEK ZNAM STO E OVA :D
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['turnjs4/lib/turn.js'],
+	nope: ['turnjs4/lib/turn.html4.min.js'],
+	both: ['css/basic.css'],
+	complete: loadApp
+});
+
+</script>
 
 </body>
 
