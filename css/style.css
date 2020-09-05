@@ -1,6 +1,6 @@
 .header-info {
     color: #171717;
-    font-size: 2.7rem;
+    font-size: 2.2rem;
     font-family: roboto, sans-serif;
     font-style: italic;
     font-weight: bold;
@@ -9,10 +9,10 @@
 
   .archive{
     color: #171717;
-    font-size: 2.7rem;
+    font-size: 2.2rem;
     font-style: italic;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   .footerText {
@@ -25,18 +25,24 @@
   }
 
   .footer {
-  font-family: roboto, sans-serif;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  top: 45.07rem;
-  width: 100%;
-  background-color: #171717;
-  color: white;
-  text-align: center;
+    font-family: roboto, sans-serif;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    top: 5rem;
+    width: 100%;
+    background-color: #171717;
+    color: white;
+    text-align: center;
   }
 
   .flipbook{
-  width: 55rem;
-  height: 19.9rem;
+    width: 55rem;
+    height: 19.9rem;
+  }
+
+  a:hover {
+    color: #232323;
+    background-color: transparent;
+    text-decoration: underline;
   }
