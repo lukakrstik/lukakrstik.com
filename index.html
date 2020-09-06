@@ -31,7 +31,7 @@
 
     <div>
         <div class="text-center">
-            <img src="images/logo.svg" width="131" height="200" class="center mx-auto mt-3">
+            <img src="images/logo.svg" width="105rem" height="160rem" class="center mx-auto mt-3">
         </div>
     </div>
 
@@ -81,22 +81,38 @@
 </div>
 
 <div class="footer">
-    <p class="footerText">Contact Email: luka.krstik@protonmail.com</p>
+    <p class="footerText">Contact Email: lukakrstik@outlook.com</p>
 </div> <!-- nov mail ne licen -->
 
 <script type="text/javascript">
 
-function loadApp() {
-    $('.flipbook').turn({
-        //900px
-		//width: 900,
-		//318px
-        //height:318,
-        elevation:50,
-        gradients: true,
-        autocenter: true,
-    });
+if (screen.width <= 960){
+    function loadApp() {
+        $('.flipbook').turn({
+            //900px
+		    //width: 900,
+		    //318px
+            //height:318,
+            elevation:50,
+            gradients: true,
+            display: 'single',
+        });
+    }
 }
+else
+    function loadApp() {
+        $('.flipbook').turn({
+            //900px
+		    //width: 900,
+		    //318px
+            //height:318,
+            elevation:50,
+            gradients: true,
+            display: 'double',
+        });
+    }
+
+
 
 // Load the HTML4 version if there's not CSS transform <= COPY PASTE HEHE NEMA DA SE PRAAM DEMEK ZNAM STO E OVA :D
 yepnope({

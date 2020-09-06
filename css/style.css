@@ -41,6 +41,11 @@
     height: 19.9rem;
   }
 
+  .flipbookM{
+    width: 100rem;
+    height 19.9rem;
+  }
+
   a:hover {
     color: #232323;
     background-color: transparent;
