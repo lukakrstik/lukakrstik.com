@@ -46,9 +46,9 @@
     </div>
 
     <div class="container">
-        <div class="margin">
+        <div> <!--bese koristen za margins predhodno-->
             <div class="flipbook-viewport">
-                <div class="flipbook m-auto">
+                <div class="flipbook m-auto" id="test">
                     <div><img src="images/pj images/page01.jpg" width="100%" height="100%"></div>
                     <div><img src="images/pj images/page02.jpg" width="100%" height="100%"></div>
                     <div><img src="images/pj images/page03.jpg" width="100%" height="100%"></div>
@@ -89,6 +89,15 @@
 
 
 if (screen.width <= 960){
+    var style = document.createElement('style');
+            style.innerHTML = `
+                #test {
+                    width: 41.25rem;
+                    height: 29.85rem;
+                    text-align: center;
+                }
+            `;
+    document.head.appendChild(style);
     function loadApp() {
         $('.flipbook').turn({
             elevation:50,
