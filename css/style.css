@@ -49,8 +49,13 @@ body {
 
   .margin{
       text-align: center;
-      margin-left: -41.5rem;
+      float: left;
+
   }
+    .margin2{
+        text-align: center;
+        float: left;
+    }
   a:hover {
     color: #232323;
     background-color: transparent;
