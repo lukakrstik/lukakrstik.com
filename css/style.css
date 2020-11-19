@@ -19,68 +19,45 @@ body {
       text-decoration: underline;
   }
 
-  .archive{
-    color: #171717;
-    font-size: 2.2rem;
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-
-  .footerText {
-    color: white;
-    font-size: 1.2rem;
-    font-family: roboto, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-  .footer {
-    font-family: roboto, sans-serif;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    top: 5rem;
-    width: 100%;
-    background-color: #171717;
-    color: white;
-    text-align: center;
-  }
-
-  .flipbook{
-    width: 82.5rem;
-    height: 29.85rem;
-
-  }
-
   .levo{
       float: left;
+ }
 
-  }
-    .margin2{
-        text-align: center;
-        float: center;
-    }
   a:hover {
     color: #232323;
     background-color: transparent;
     text-decoration: underline;
   }
 
-.vl {
-    border-right: 3px solid black;
-}
-
-.card-no-border {
+  .card-no-border {
     border: none;
-}
+  }
 
-.visina {
+  .visina {
     height: 20rem;
     width: auto;
+  }
+
+  .dkl {
+    direction: rtl;
+  }
+
+  .slika {
+
+  }
+
+.card{
 }
 
-.dkl {
-    direction: rtl;
+.grid {
+  display: grid;
+  grid-template-columns : repeat(3,1fr);
+  grid-template-rows: repeat(2, 20vw);
+  grid-gap: 10px;
+}
+
+.grid_image {
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
