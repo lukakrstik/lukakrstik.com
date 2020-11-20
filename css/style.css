@@ -38,17 +38,6 @@ body {
     width: auto;
   }
 
-  .dkl {
-    direction: rtl;
-  }
-
-  .slika {
-
-  }
-
-.card{
-}
-
 .grid {
   display: grid;
   grid-template-columns : repeat(3,1fr);
@@ -65,3 +54,11 @@ body {
 .card-columns{
     display: inline-block;
 }
+
+.header-info-b {
+    color: #171717;
+    font-size: 2.5rem;
+    font-family: oxygen, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+  }
