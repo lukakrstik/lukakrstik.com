@@ -5,14 +5,14 @@ body {
 
 .header-info {
     color: #171717;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: oxygen, sans-serif;
     font-weight: bold;
     text-decoration: none;
   }
 .header-info-italic {
       color: #171717;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-family: oxygen, sans-serif;
       font-style: italic;
       font-weight: bold;
@@ -57,8 +57,13 @@ body {
 
 .header-info-b {
     color: #171717;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-family: oxygen, sans-serif;
     font-weight: bold;
     text-decoration: none;
   }
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
