@@ -19,15 +19,6 @@ body {
       text-decoration: none;
   }
 
-  .levo{
-      float: left;
- }
-
-  a:hover {
-    color: #232323;
-    background-color: transparent;
-    text-decoration: underline;
-  }
 
   .card-no-border {
     border: none;
@@ -63,9 +54,15 @@ body {
     text-decoration: none;
   }
 
+.hyperlink{
+    transition: color 0.8s;
+    color: #171717;
+}
+
 .hyperlink:hover {
-    color: red;
+    color: #2d966b;
     text-decoration: none;
+    transition: color 0.4s;
 }
 
 .card-img:hover{
@@ -76,4 +73,37 @@ body {
 .card-img{
     transition: transform 0.5s;
     transform: scale(1.0);
+}
+
+
+.fade-in {
+animation: fadeIn ease 5s;
+-webkit-animation: fadeIn ease 5s;
+-moz-animation: fadeIn ease 5s;
+-o-animation: fadeIn ease 5s;
+-ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }
