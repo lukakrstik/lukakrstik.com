@@ -72,3 +72,8 @@ body {
     transition: transform 0.5s;
     transform: scale(1.04);
 }
+
+.card-img{
+    transition: transform 0.5s;
+    transform: scale(1.0);
+}
