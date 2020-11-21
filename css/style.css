@@ -63,7 +63,12 @@ body {
     text-decoration: none;
   }
 
-a:hover {
+.hyperlink:hover {
     color: red;
     text-decoration: none;
+}
+
+.card-img:hover{
+    transition: transform 0.5s;
+    transform: scale(1.04);
 }
