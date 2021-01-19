@@ -6,14 +6,14 @@ body {
 .header-info {
     color: #171717;
     font-size: 1.4rem;
-    font-family: oxygen, sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-weight: bold;
     text-decoration: none;
   }
 .header-info-italic {
       color: #171717;
       font-size: 1.4rem;
-      font-family: oxygen, sans-serif;
+      font-family: 'Oxygen', sans-serif;
       font-style: italic;
       font-weight: bold;
       text-decoration: none;
@@ -49,7 +49,7 @@ body {
 .header-info-b {
     color: #171717;
     font-size: 2.3rem;
-    font-family: oxygen, sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-weight: bold;
     text-decoration: none;
   }
@@ -111,7 +111,7 @@ animation: fadeIn ease 3s;
 .header-info-upload {
       color: #171717;
       font-size: 1.8rem;
-      font-family: oxygen, sans-serif;
+      font-family: 'Oxygen', sans-serif;
       font-style: italic;
       font-weight: bold;
       text-decoration: none;
