@@ -125,3 +125,8 @@ animation: fadeIn ease 3s;
         font-weight: bold;
         text-decoration: none;
     }
+
+.hyperlink-slide{
+    transition: color 0.8s;
+    color: #FFFFFF;
+}
