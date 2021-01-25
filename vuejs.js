@@ -1,0 +1,86 @@
+
+// Create a Vue application
+const app = Vue.createApp({})
+
+// Define a new global component called button-counter
+app.component('app-nav', {
+  template: `
+            <li class="nav-item">
+                <a href="https://lukakrstik.com" class="header-info hyperlink my-0">Home</a>
+             </li>
+             <li class="nav-item">
+                <a href="https://lukakrstik.com/gallery" class="header-info hyperlink my-0">Gallery</a>
+             </li>
+             <li class="nav-item">
+                <a href="https://fliphtml5.com/bookcase/bjubr" class="header-info hyperlink my-0">Albums</a>
+             </li>
+             <li class="nav-item">
+                <a href="https://lukakrstik.com/contact" class="header-info hyperlink my-0">Contact</a>
+             </li>`
+})
+
+app.mount('#navigation-app')
+
+const UrlList = {
+  data() {
+    return {
+        featured: [
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5957T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5957O.jpg?raw=true' },
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_4318T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_4318O.jpg?raw=true' },
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5975T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5975O.jpg?raw=true' },
+                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6344T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6344O.jpg?raw=true' },
+                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5721T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5721O.jpg?raw=true' },
+                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6141T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6141O.jpg?raw=true' },
+        ],
+
+        pictures: [
+                  { tag: 'landscape', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_3291T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_3291O.jpg?raw=true' },
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_4058T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_4058O.jpg?raw=true' },
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_4286T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_4286O.jpg?raw=true' },
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_4318T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_4318O.jpg?raw=true' },
+                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5312T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5312O.jpg?raw=true' },
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5356T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5356O.jpg?raw=true' },
+                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5363T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5363O.jpg?raw=true' },
+                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5389T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5389O.jpg?raw=true' },
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5537T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5537O.jpg?raw=true' },
+                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5582T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5582O.jpg?raw=true' },
+                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5597T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5597O.jpg?raw=true' },
+                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5659T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5659O.jpg?raw=true' },
+                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5721T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5721O.jpg?raw=true' },
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5947T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5947O.jpg?raw=true' },
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5957T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5957O.jpg?raw=true' },
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5975T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5975O.jpg?raw=true' },
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6100T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6100O.jpg?raw=true' },
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6112T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6112O.jpg?raw=true' },
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6124T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6124O.jpg?raw=true' },
+                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6141T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6141O.jpg?raw=true' },
+                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6146T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6146O.jpg?raw=true' },
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6165T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6165O.jpg?raw=true' },
+                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6344T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6344O.jpg?raw=true' },
+                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/Solunska GlavaT.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/Solunska GlavaO.jpg?raw=true' }
+        ],
+    }
+  }
+}
+
+const test = Vue.createApp(UrlList)
+test.component('app-cards', {
+  props: ['pic'],
+  template: `<div class="card my-3 col-sm-6 col-lg-4" style="border: none;">
+                <a :href=pic.olink data-fancybox="gallery">
+                    <img class="card-img" :src=pic.tlink alt="Error Loading Photo">
+                </a>
+             </div>`
+})
+
+test.mount('#app-card')
+
+// Function for loading the layout after the images have loaded.
+var grid = document.getElementById("app-card");
+var msnry;
+    imagesLoaded( grid, function() {
+  // init Isotope after all images have loaded
+  msnry = new Masonry( grid, {
+    itemSelector: '.card',
+  });
+});

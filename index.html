@@ -4,7 +4,7 @@
     <title>Luka Krstik</title>
     <meta charset='UTF-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-    <meta name="description" content="Personal photography portfolio">
+    <meta name="description" content="A curated portfolio of my personal works in my photography journey.">
     <meta name="keywords" content="photojournal, lukakrstik, portfolio">
     <meta name="author" content="Luka Krstik">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,27 +13,28 @@
     <link rel="icon" href="images/icon.ico"> <!-- page ikonata ne raboti -->
     <!-- <link rel="icon" type="image/gif/png" href="static/images/icons/title-icon.png"> -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
     <!--Bootstrap-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-            crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--VUE-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--Masonry-->
+    <script async="" src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-557TCFBMHR"></script>
     <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-557TCFBMHR');
-</script>
-    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+      gtag('config', 'G-557TCFBMHR');
+    </script>
 </head>
 <body>
 <div class="container-fluid">
@@ -42,23 +43,12 @@
         <!--Navbar-->
         <div style="list-style: none;" class="mt-2 ml-0">
             <nav class="navbar bg-black compensate-for-scrollbar">
-                    <a class="navbar-brand" href="https://lukakrstik.com">
-                        <img src="https://raw.githubusercontent.com/Nonus10/websajt/master/images/logo.svg" width="84rem"
-                             height="128rem" alt="Luka Krstik">
-                    </a>
-                <ul class="navbar-nav float-right mr-1" style="text-align: right;">
-                    <li class="nav-item">
-                        <a href="#" class="header-info-italic hyperlink my-0">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://lukakrstik.com/gallery" class="header-info hyperlink my-0"><span class="badge badge-pill badge-info mx-2">New</span>Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://fliphtml5.com/bookcase/bjubr" class="header-info hyperlink my-0">Albums</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://lukakrstik.com/contact" class="header-info hyperlink my-0">Contact</a>
-                    </li>
+                <a class="navbar-brand" href="https://lukakrstik.com">
+                    <img src="https://raw.githubusercontent.com/Nonus10/websajt/master/images/logo.svg" width="84rem"
+                         height="128rem" alt="Luka Krstik">
+                </a>
+                <ul class="navbar-nav float-right mr-1" style="text-align: right;" id="navigation-app">
+                    <app-nav></app-nav>
                 </ul>
             </nav>
         </div>
@@ -69,48 +59,17 @@
             <div class="container-fluid" style="width: 95%;">
                 <!--Cards-->
                 <h1 class="header-info-upload text-center my-2 mx-auto">Featured Photos</h1>
-                <div class="card-columns row " style="display: inline-block;">
-
-                    <div class="card my-2" style="border: none;">
-                        <a href="https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5957O.jpg?raw=true" data-fancybox="gallery">
-                            <img class="card-img" src= "https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5957T.jpg?raw=true">
-                        </a>
-                    </div>
-
-                    <div class="card my-2" style="border: none;">
-                        <a href="https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6141O.jpg?raw=true" data-fancybox="gallery">
-                            <img class="card-img" src= "https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6141T.jpg?raw=true">
-                        </a>
-                    </div>
-
-                    <div class="card my-2" style="border: none;">
-                        <a href="https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_4318O.jpg?raw=true" data-fancybox="gallery">
-                            <img class="card-img" src= "https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_4318T.jpg?raw=true">
-                        </a>
-                    </div>
-
-                    <div class="card my-2" style="border: none;">
-                        <a href="https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6344O.jpg?raw=true" data-fancybox="gallery">
-                            <img class="card-img" src= "https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6344T.jpg?raw=true">
-                        </a>
-                    </div>
-
-                    <div class="card my-2" style="border: none;">
-                        <a href="https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5975O.jpg?raw=true" data-fancybox="gallery">
-                            <img class="card-img" src= "https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5975T.jpg?raw=true">
-                        </a>
-                    </div>
-
-                    <div class="card my-2" style="border: none;">
-                        <a href="https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5721O.jpg?raw=true" data-fancybox="gallery">
-                            <img class="card-img" src= "https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5721T.jpg?raw=true">
-                        </a>
-                    </div>
-
+                <div class="row mx-auto" id="app-card" data-masonry='{"percentPosition": true }' style="position: relative;">
+                    <template v-for="feature in featured">
+                        <app-cards
+                                v-bind:pic="feature"
+                        ></app-cards>
+                    </template>
                 </div>
             </div>
         </div>
 </div>
+<script src="vuejs.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="jquery.fancybox.min.js"></script>
 </body>
