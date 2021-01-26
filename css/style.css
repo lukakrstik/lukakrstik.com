@@ -130,3 +130,117 @@ animation: fadeIn ease 3s;
     transition: color 0.8s;
     color: #FFFFFF;
 }
+
+/* Custom button design */
+.fancybox-button {
+  background: transparent;
+  color: #333;
+}
+
+.fancybox-toolbar .fancybox-button:hover {
+  background: none;
+  color: #2d966b;
+  transition: color 0.4s;
+}
+
+/* Make close button a bit bigger */
+.fancybox-button--close {
+  padding: 7px;
+}
+
+/* Navigation arrows */
+.fancybox-navigation .fancybox-button {
+  z-index: 99996;
+}
+
+.fancybox-navigation .fancybox-button div {
+  padding: 0;
+}
+
+.fancybox-navigation .fancybox-button[disabled],
+.fancybox-navigation .fancybox-button[disabled]:hover {
+  color: #171717;
+}
+
+.fancybox-navigation .fancybox-button:hover {
+  color: #2d966b;
+  transition: color 0.4s;
+}
+
+/* Change backdrop color */
+.fancybox-bg {
+  background: #eee;
+}
+
+/* Initially hide the caption */
+.caption {
+  display: none;
+}
+
+/* Change position and design of caption area */
+.fancybox-caption {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  padding: 0;
+  width: 300px;
+  background: #eee;
+  color: #333;
+  box-shadow: 0 0 20px #888;
+  z-index: 99996;
+  text-align: left;
+
+  /* Hide next to right edge */
+  transform: translate3d(320px, 0, 0);
+}
+
+.fancybox-caption::before {
+  display: none;
+}
+
+.fancybox-caption > div {
+  margin-top: 44px;
+  padding: 20px;
+  max-height: calc(100vh - 44px);
+  overflow: auto;
+}
+
+/* Overwrite the default animation */
+.fancybox-show-caption .fancybox-caption,
+.fancybox-caption {
+  transition: transform .2s;
+}
+
+/* Reveal caption */
+ .fancybox-show-caption.fancybox-vertical-caption .fancybox-caption {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Styling of caption content */
+.fancybox-caption a {
+  color: #333;
+}
+
+.fancy-nav a {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: 'Oxygen', sans-serif;
+  background: #444;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 18px;
+  text-align: center;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.fancy-nav a:hover {
+  text-decoration: none;
+}
