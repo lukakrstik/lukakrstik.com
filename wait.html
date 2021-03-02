@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='en' xmlns:min-width="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Albums | Luka Krstik</title>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+    <!--svoe sranje-->
+    <link rel="icon" href="images/icon.ico"> <!-- page ikonata ne raboti -->
+    <!-- <link rel="icon" type="image/gif/png" href="static/images/icons/title-icon.png"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--VUE-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-557TCFBMHR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-557TCFBMHR');
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+
+
+    <!--Navbar-->
+    <div style="list-style: none;" class="mt-2 ml-0">
+        <nav class="navbar bg-black compensate-for-scrollbar">
+            <a class="navbar-brand" href="https://lukakrstik.com">
+                <img src="https://raw.githubusercontent.com/Nonus10/websajt/master/images/logo.svg" width="84rem"
+                     height="128rem" alt="Luka Krstik">
+            </a>
+            <ul class="navbar-nav float-right mr-1" style="text-align: right;" id="navigation-app">
+                <app-nav></app-nav>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container-fluid" style="width: 95%;">
+        <h1 class="header-info-upload text-center my-2 mx-auto">Patience</h1>
+        <h1 class="header-info-upload text-center my-2 mb-4 mx-auto" style="text-decoration: underline;" id="timer"></h1>
+    </div>
+
+</div>
+</body>
+<script src="vuejs.js"></script>
+<script>
+    // Set the date we're counting down to
+var countDownDate = new Date("Mar 3, 2021 15:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</html>

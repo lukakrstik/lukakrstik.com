@@ -12,7 +12,7 @@ app.component('app-nav', {
                 <a href="https://lukakrstik.com/gallery" class="header-info hyperlink my-0">Gallery</a>
              </li>
              <li class="nav-item">
-                <a href="https://fliphtml5.com/bookcase/bjubr" class="header-info hyperlink my-0">Albums</a>
+                <a href="https://lukakrstik.com/wait" class="header-info hyperlink my-0">Albums</a>
              </li>
              <li class="nav-item">
                 <a href="https://lukakrstik.com/contact" class="header-info hyperlink my-0">Contact</a>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en' xmlns:min-width="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Albums | Luka Krstik</title>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+    <!--svoe sranje-->
+    <link rel="icon" href="images/icon.ico"> <!-- page ikonata ne raboti -->
+    <!-- <link rel="icon" type="image/gif/png" href="static/images/icons/title-icon.png"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--VUE-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-557TCFBMHR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-557TCFBMHR');
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+
+
+    <!--Navbar-->
+    <div style="list-style: none;" class="mt-2 ml-0">
+        <nav class="navbar bg-black compensate-for-scrollbar">
+            <a class="navbar-brand" href="https://lukakrstik.com">
+                <img src="https://raw.githubusercontent.com/Nonus10/websajt/master/images/logo.svg" width="84rem"
+                     height="128rem" alt="Luka Krstik">
+            </a>
+            <ul class="navbar-nav float-right mr-1" style="text-align: right;" id="navigation-app">
+                <app-nav></app-nav>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container-fluid">
+        <style>.embed-container { position: relative; padding-bottom:56.25%; height:0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}</style>
+        <div class='embed-container' data-page-width='500' data-page-height='354' id='ypembedcontainer' >
+            <iframe   src="https://www.yumpu.com/en/embed/view/9WiCJ6TkzpFV0H1f" frameborder="0" allowfullscreen="true"  allowtransparency="true"></iframe>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="vuejs.js"></script>
+<script src='https://players.yumpu.com/modules/embed/yp_r_iframe.js' ></script>
+</html>
