@@ -244,3 +244,12 @@ animation: fadeIn ease 3s;
 .fancy-nav a:hover {
   text-decoration: none;
 }
+
+.header-info-info {
+      color: #2d966b;
+      font-size: 1.8rem;
+      font-family: 'Oxygen', sans-serif;
+      font-style: italic;
+      font-weight: bold;
+      text-decoration: underline;
+  }

@@ -12,7 +12,7 @@ app.component('app-nav', {
                 <a href="https://lukakrstik.com/gallery" class="header-info hyperlink my-0">Gallery</a>
              </li>
              <li class="nav-item">
-                <a href="https://lukakrstik.com/wait" class="header-info hyperlink my-0">Albums</a>
+                <span class="badge badge-pill badge-info mr-2">New</span><a href="https://lukakrstik.com/albums" class="header-info hyperlink my-0">Albums</a>
              </li>
              <li class="nav-item">
                 <a href="https://lukakrstik.com/contact" class="header-info hyperlink my-0">Contact</a>
