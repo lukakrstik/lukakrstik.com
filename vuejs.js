@@ -12,7 +12,7 @@ app.component('app-nav', {
                 <a href="https://lukakrstik.com/gallery" class="header-info hyperlink my-0">Gallery</a>
              </li>
              <li class="nav-item">
-                <span class="badge badge-pill badge-info mr-2">New</span><a href="https://lukakrstik.com/albums" class="header-info hyperlink my-0">Albums</a>
+                <a href="https://lukakrstik.com/albums" class="header-info hyperlink my-0">Albums</a>
              </li>
              <li class="nav-item">
                 <a href="https://lukakrstik.com/contact" class="header-info hyperlink my-0">Contact</a>
@@ -25,19 +25,32 @@ const UrlList = {
   data() {
     return {
         featured: [
-                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6381T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6381O.jpg?raw=true' },
-                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6432T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6432O.jpg?raw=true' },
-                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6390T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6390O.jpg?raw=true' },
-                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6443T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6443O.jpg?raw=true' },
-                  { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6454T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6454O.jpg?raw=true' },
-                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6396T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6396O.jpg?raw=true' },
-                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6410T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6410O.jpg?raw=true' },
-                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6414T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6414O.jpg?raw=true' },
-                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6426T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6426O.jpg?raw=true' },
-                  { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6430T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6430O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7068T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7068O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DJI_0404T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DJI_0404O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7096T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7096O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7100T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7100O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7140T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7140O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DJI_0413T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DJI_0413O.jpg?raw=true' },
+
         ],
 
         pictures: [
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7485T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7485O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DJI_0404T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DJI_0404O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DJI_0413T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DJI_0413O.jpg?raw=true' },
+                    { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7026T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7026O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7054T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7054O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7068T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7068O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7096T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7096O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7100T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7100O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7101T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7101O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7132T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7132O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7140T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7140O.jpg?raw=true' },
+                    { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6566T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6566O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6748T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6748O.jpg?raw=true' },
+                    { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6823T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6823O.jpg?raw=true' },
+                    { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6824T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6824O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6987T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6987O.jpg?raw=true' },
                   { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6381T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6381O.jpg?raw=true' },
                   { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6382T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6382O.jpg?raw=true' },
                   { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6387T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_6387O.jpg?raw=true' },
