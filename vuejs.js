@@ -31,6 +31,8 @@ const UrlList = {
         ],
 
         pictures: [
+                    { tag: 'null', isColor: true , tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8371T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8371O.jpg?raw=true' },
+                    { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8388T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8388O.jpg?raw=true' },
                     { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7956T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7956O.jpg?raw=true' },
                     { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7983T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7983O.jpg?raw=true' },
                     { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8001T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8001O.jpg?raw=true' },
