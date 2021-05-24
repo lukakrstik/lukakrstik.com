@@ -25,12 +25,18 @@ const UrlList = {
   data() {
     return {
         featured: [
-                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7956T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7956O.jpg?raw=true' },
-                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8001T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8001O.jpg?raw=true' },
-                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7983T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7983O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8817T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8817O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_4467T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_4467O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/140919T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/140919O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/Solunska GlavaT.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/Solunska GlavaO.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5957T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5957O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5975T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_5975O.jpg?raw=true' },
         ],
 
         pictures: [
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/140919T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/140919O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_4467T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_4467O.jpg?raw=true' },
+                    { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8817T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8817O.jpg?raw=true' },
                     { tag: 'null', isColor: true , tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8371T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8371O.jpg?raw=true' },
                     { tag: 'null', isColor: false, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8388T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_8388O.jpg?raw=true' },
                     { tag: 'null', isColor: true, tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7956T.jpg?raw=true', olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_7956O.jpg?raw=true' },
