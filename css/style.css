@@ -253,3 +253,11 @@ animation: fadeIn ease 3s;
       font-weight: bold;
       text-decoration: underline;
   }
+.header-info-albumview {
+    color: #171717;
+    font-size: 1.8rem;
+    font-family: 'Oxygen', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}

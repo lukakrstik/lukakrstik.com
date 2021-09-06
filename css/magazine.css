@@ -9,20 +9,20 @@ body{
 	top:45%;
 	left:50%;
 	width:1200px;
-	height:461px;
+	height:424px;
 	margin:auto;
 }
 
 .magazine-viewport .magazine{
 	width:1200px;
-    height:461px;
-	left:-461px;
+    height:424px;
+	left:-424px;
 	top:-400px;
 }
 
 .magazine-viewport .page{
 	width:600px;
-    height:461px;
+    height:424px;
 	background-color:white;
 	background-repeat:no-repeat;
 	background-size:100% 100%;

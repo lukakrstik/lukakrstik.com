@@ -48,7 +48,7 @@ function loadPage(page, pageElement) {
 
 	// Load the page
 
-	img.attr('src', 'uc1/' +  page + '.jpg');
+	img.attr('src', 'pcms/' +  page + '.jpg');
 
 	loadRegions(page, pageElement);
 
@@ -193,7 +193,7 @@ function loadSmallPage(page, pageElement) {
 	img.unbind('load');
 	// Loadnew page
 
-	img.attr('src', 'uc1/' +  page + '.jpg');
+	img.attr('src', 'pcms/' +  page + '.jpg');
 }
 
 // http://code.google.com/p/chromium/issues/detail?id=128488
