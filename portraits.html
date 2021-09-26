@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>Portraits | Luka Krstik</title>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+  <!--svoe sranje-->
+  <link rel="icon" href="images/icon.ico"> <!-- page ikonata ne raboti -->
+  <!-- <link rel="icon" type="image/gif/png" href="static/images/icons/title-icon.png"> -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+  <!--Bootstrap-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!--VUE-->
+  <script src="https://unpkg.com/vue@next"></script>
+  <!--Masonry-->
+  <script async="" src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-557TCFBMHR"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-557TCFBMHR');
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+
+
+  <!--Navbar-->
+  <div style="list-style: none;" class="mt-2 ml-0">
+    <nav class="navbar bg-black compensate-for-scrollbar" id="navigation-app">
+      <app-nav></app-nav>
+    </nav>
+  </div>
+
+
+  <div class="mx-3 mt-3 fade-in compensate-for-scrollbar">
+    <div class="container-fluid" style="width: 92%;">
+      <div class="row">
+        <a href="https://lukakrstik.com/bw" class="header-info-upload hyperlink text-left my-2 mr-auto ml-0">B/W</a>
+        <a href="https://lukakrstik.com/landscapes" class="header-info-upload hyperlink text-right my-2 ml-auto mr-2">Landscapes</a>
+      </div>
+    </div>
+    <!--Cards-->
+    <div class="container-fluid" style="width: 95%;">
+      <div class="row mx-auto" id="app-card" data-masonry='{"percentPosition": true }' style="position: relative;">
+        <template v-for="picture in pictures">
+          <app-cards
+                  v-if="picture.tag === 'port'"
+                  v-bind:pic="picture"
+          ></app-cards>
+        </template>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<script src="vuejs.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="jquery.fancybox.min.js"></script>
+</body>
+</html>

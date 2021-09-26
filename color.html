@@ -39,27 +39,21 @@
 
     <!--Navbar-->
     <div style="list-style: none;" class="mt-2 ml-0">
-        <nav class="navbar bg-black compensate-for-scrollbar">
-            <a class="navbar-brand" href="https://lukakrstik.com">
-                <img src="https://raw.githubusercontent.com/Nonus10/websajt/master/images/logo.svg" width="84rem"
-                     height="128rem" alt="Luka Krstik">
-            </a>
-            <ul class="navbar-nav float-right mr-1" style="text-align: right;" id="navigation-app">
-                <app-nav></app-nav>
-            </ul>
+        <nav class="navbar bg-black compensate-for-scrollbar" id="navigation-app">
+            <app-nav></app-nav>
         </nav>
     </div>
 
 
     <div class="mx-3 mt-3 fade-in compensate-for-scrollbar">
-        <div class="container-fluid" style="width: 92%;">
+        <div class="container-fluid" style="width: 91%;">
             <div class="row">
                 <a href="https://lukakrstik.com/gallery" class="header-info-upload hyperlink text-left my-2 mr-auto ml-0">Gallery</a>
                 <a href="https://lukakrstik.com/bw" class="header-info-upload hyperlink text-right my-2 ml-auto mr-2">B/W</a>
             </div>
         </div>
         <!--Cards-->
-        <div class="container-fluid" style="width: 95%;">
+        <div class="container-fluid" style="width: 100%;">
             <div class="row mx-auto" id="app-card" data-masonry='{"percentPosition": true }' style="position: relative;">
                 <template v-for="picture in pictures">
                     <app-cards

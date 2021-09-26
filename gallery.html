@@ -32,31 +32,27 @@
 
       gtag('config', 'G-557TCFBMHR');
     </script>
+    <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
 </head>
 <body>
 <div class="container-fluid">
 
-
     <!--Navbar-->
     <div style="list-style: none;" class="mt-2 ml-0">
-        <nav class="navbar bg-black compensate-for-scrollbar">
-            <a class="navbar-brand" href="https://lukakrstik.com">
-                <img src="https://raw.githubusercontent.com/Nonus10/websajt/master/images/logo.svg" width="84rem"
-                     height="128rem" alt="Luka Krstik">
-            </a>
-            <ul class="navbar-nav float-right mr-1" style="text-align: right;" id="navigation-app">
-                <app-nav></app-nav>
-            </ul>
+        <nav class="navbar bg-black compensate-for-scrollbar" id="navigation-app">
+            <app-nav></app-nav>
         </nav>
     </div>
 
-
     <!--Collections-->
     <div class="mx-3 mt-3 fade-in compensate-for-scrollbar">
-        <div class="container-fluid" style="width: 97%;">
+        <div class="container-fluid" style="width: 96%;">
             <h1 class="header-info-upload text-center my-2 mx-auto">Collections</h1>
-            <div class="card-deck row mx-0 my-3 col-sm-6 col-lg-12">
-                <div class="card text-white my-2 mx-0 rounded">
+
+            <!--Carousel-->
+            <div class="card-deck row mx-0 mt-3 mb-2">
+                <!--Color-->
+                <div class="card text-white my-1 mx-1 rounded">
                     <a href="https://lukakrstik.com/color">
                         <div class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
@@ -70,14 +66,14 @@
                                     <img class="d-block w-100" src="https://github.com/lukakrstik/website-photo-pool/blob/master/images/SC3.jpg?raw=true" alt="Third slide">
                                 </div>
                             </div>
-                            <div class="card-img-overlay">
-                                <h1 class="hyperlink-slide mt-1" style="font-family:'Oxygen', Sans-serif; font-size: 2.5rem; font-style: italic;">Color</h1>
+                            <div class="card-img-overlay d-flex h-100">
+                                <h2 class="hyperlink-slide row align-self-center mx-auto" style="font-family:'Oxygen', Sans-serif; font-style: italic; ">Color</h2>
                             </div>
                         </div>
                     </a>
                 </div>
-
-                <div class="card text-white my-2 mx-0 rounded">
+                <!--BW-->
+                <div class="card text-white my-1 mx-1 rounded">
                     <a href="https://lukakrstik.com/bw">
                         <div class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
@@ -91,8 +87,50 @@
                                     <img class="d-block w-100" src="https://github.com/lukakrstik/website-photo-pool/blob/master/images/SB3.jpg?raw=true" alt="Third slide">
                                 </div>
                             </div>
-                            <div class="card-img-overlay">
-                                <h1 class="hyperlink-slide mt-1" style="font-family:'Oxygen', Sans-serif; font-size: 2.5rem; font-style: italic;">B/W</h1>
+                            <div class="card-img-overlay d-flex h-100">
+                                <h2 class="hyperlink-slide row align-self-center mx-auto" style="font-family:'Oxygen', Sans-serif; font-style: italic; ">Black/White</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--PORTRAITS-->
+                <div class="card text-white my-1 mx-1 rounded">
+                    <a href="https://lukakrstik.com/portraits">
+                        <div class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="1750">
+                                    <img class="d-block w-100" src="https://github.com/lukakrstik/website-photo-pool/blob/master/images/SP1.jpg?raw=true" alt="First slide">
+                                </div>
+                                <div class="carousel-item" data-interval="1750">
+                                    <img class="d-block w-100" src="https://github.com/lukakrstik/website-photo-pool/blob/master/images/SP2.jpg?raw=true" alt="Second slide">
+                                </div>
+                                <div class="carousel-item" data-interval="1750">
+                                    <img class="d-block w-100" src="https://github.com/lukakrstik/website-photo-pool/blob/master/images/SP3.jpg?raw=true" alt="Third slide">
+                                </div>
+                            </div>
+                            <div class="card-img-overlay d-flex h-100">
+                                <h2 class="hyperlink-slide row align-self-center mx-auto" style="font-family:'Oxygen', Sans-serif; font-style: italic; ">Portraits</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--Landscapes-->
+                <div class="card text-white my-1 mx-1 rounded">
+                    <a href="https://lukakrstik.com/landscapes">
+                        <div class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="1750">
+                                    <img class="d-block w-100" src="https://github.com/lukakrstik/website-photo-pool/blob/master/images/SL1.jpg?raw=true" alt="First slide">
+                                </div>
+                                <div class="carousel-item" data-interval="1750">
+                                    <img class="d-block w-100" src="https://github.com/lukakrstik/website-photo-pool/blob/master/images/SL2.jpg?raw=true" alt="Second slide">
+                                </div>
+                                <div class="carousel-item" data-interval="1750">
+                                    <img class="d-block w-100 img-fluid" src="https://github.com/lukakrstik/website-photo-pool/blob/master/images/SL3.jpg?raw=true" alt="Third slide">
+                                </div>
+                            </div>
+                            <div class="card-img-overlay d-flex h-100">
+                                <h2 class="hyperlink-slide row align-self-center mx-auto" style="font-family:'Oxygen', Sans-serif; font-style: italic; ">Landscapes</h2>
                             </div>
                         </div>
                     </a>
@@ -100,17 +138,19 @@
             </div>
         </div>
 
-
         <!--Cards-->
-        <div class="container-fluid" style="width: 97%; " id="basic-event">
+
+        <div class="container-fluid" style="width: 97.5%; " id="basic-event">
             <h1 class="header-info-upload hyperlink text-center my-2 mx-auto">All Photos</h1>
-                <div class="row mx-0" id="app-card" data-masonry='{"percentPosition": true }' style="position: relative;">
-                    <template v-for="picture in pictures">
-                        <app-cards
-                                v-bind:pic="picture"
-                        ></app-cards>
-                    </template>
-                </div>
+        <div id="app-card" >
+                    <div class="mb-5" data-masonry='{"percentPosition": true }' style="position: relative;">
+                        <template v-for="picture in fotki">
+                            <app-cards
+                                    v-bind:pic="pictures[picture]"
+                            ></app-cards>
+                        </template>
+                    </div>
+        </div>
         </div>
 
 
@@ -119,5 +159,7 @@
 <script src="vuejs.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="jquery.fancybox.min.js"></script>
+<script>
+</script>
 </body>
 </html>

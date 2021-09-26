@@ -5,14 +5,14 @@ body {
 
 .header-info {
     color: #171717;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
     text-decoration: none;
   }
 .header-info-italic {
       color: #171717;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-family: 'Oxygen', sans-serif;
       font-style: italic;
       font-weight: bold;
@@ -48,7 +48,7 @@ body {
 
 .header-info-b {
     color: #171717;
-    font-size: 2.3rem;
+    font-size: 2.0rem;
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
     text-decoration: none;
@@ -110,7 +110,7 @@ animation: fadeIn ease 3s;
 
 .header-info-upload {
       color: #171717;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-family: 'Oxygen', sans-serif;
       font-style: italic;
       font-weight: bold;
@@ -129,8 +129,9 @@ animation: fadeIn ease 3s;
 .hyperlink-slide{
     transition: color 0.8s;
     color: #FFFFFF;
+    opacity: 50%;
+    font-size: 1.25rem;
 }
-
 /* Custom button design */
 .fancybox-button {
   background: transparent;
@@ -245,19 +246,33 @@ animation: fadeIn ease 3s;
   text-decoration: none;
 }
 
-.header-info-info {
-      color: #2d966b;
-      font-size: 1.8rem;
-      font-family: 'Oxygen', sans-serif;
-      font-style: italic;
-      font-weight: bold;
-      text-decoration: underline;
-  }
 .header-info-albumview {
     color: #171717;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: 'Oxygen', sans-serif;
     font-style: italic;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.carousel-item:before {
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(2px) saturate(150%) contrast(25%) brightness(130%);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #FFFFFF; border: none; !important;
+}
+
+.frosted{
+    position: fixed;
+    bottom: 0%;
+    width:100%;
+    left:0%;
+    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    backdrop-filter: blur(3px);
 }
