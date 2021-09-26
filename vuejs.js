@@ -554,7 +554,7 @@ const UrlList = {
     },
     methods: {
         plus: function () {
-            this.fotki += 20,
+            this.fotki += 5,
                 console.log(this.fotki)
             dodavanje()
         },
