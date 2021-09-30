@@ -1,34 +1,3 @@
-
-// Create a Vue application
-const app = Vue.createApp({})
-
-// Define a new global component called button-counter
-app.component('app-nav', {
-  template: `
-           <a class="navbar-brand" href="https://lukakrstik.com">
-                <img src="https://raw.githubusercontent.com/Nonus10/websajt/master/images/logo.svg"
-                style="width: 4.267rem; height: auto"
-                alt="Luka Krstik">
-           </a>
-           <ul class="navbar-nav float-right mr-1" style="text-align: right;" id="navigation-app">
-                        <li class="nav-item">
-                           <a href="https://lukakrstik.com" class="header-info hyperlink my-0">Home</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="https://lukakrstik.com/gallery" class="header-info hyperlink my-0">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="https://lukakrstik.com/albums" class="header-info hyperlink my-0">Albums</a>
-                        </li>
-                        <li class="nav-item">
-                           <a href="https://lukakrstik.com/contact" class="header-info hyperlink my-0">Contact</a>
-                        </li>
-           </ul>
-            `
-})
-
-app.mount('#navigation-app')
-
 const UrlList = {
     data() {
         return {
@@ -554,62 +523,45 @@ const UrlList = {
     },
     methods: {
         plus: function () {
-            this.fotki += 5,
-                console.log(this.fotki)
+            this.fotki += 5
+            console.log(this.fotki)
             dodavanje()
         },
         scroll () {
             window.onscroll = () => {
                 let bottomOfWindow = ((window.innerHeight + window.scrollY) >= document.body.offsetHeight)
-                
+
                 if (bottomOfWindow) {
                     setTimeout(this.plus(),3000)
                     dodavanje()
-                    
+
                 }
             }
         }
-        
+
 
     },
     mounted(){
         this.scroll()
     }
 }
-
 const test = Vue.createApp(UrlList)
 test.component('app-cards', {
-  props: ['pic'],
-  template: `<div class="card my-3 col-sm-6 col-lg-4" style="border: none;">
+    props: ['pic'],
+    template: `<div class="card my-3 col-sm-6 col-lg-4" style="border: none;">
                 <a :href=pic.olink data-fancybox="gallery">
-                    <img class="card-img" :src=pic.tlink alt="Error Loading Photo">
+                    <img class="card-img" :src=pic.tlink alt="Error Loading Photo" style="">
                 </a>
              </div>`
 })
-
-
 test.mount('#app-card')
 
-// Function for loading the layout after the images have loaded.
-var grid = document.getElementById("app-card");
-var msnry;
+function dodavanje() {
+    var grid = document.getElementById("app-card");
+    var msnry;
     imagesLoaded( grid, function() {
-  // init Isotope after all images have loaded
-  msnry = new Masonry( grid, {
-    itemSelector: '.card',
-  });
-});
-
-
-
-
-      function dodavanje() {
-      var grid = document.getElementById("app-card");
-var msnry;
-    imagesLoaded( grid, function() {
-  // init Isotope after all images have loaded
-  msnry = new Masonry( grid, {
-    itemSelector: '.card',
-  });
-  console.log("passed kurac")
-});}
+        // init Isotope after all images have loaded
+        msnry = new Masonry( grid, {
+            itemSelector: '.card',
+        });
+    });}

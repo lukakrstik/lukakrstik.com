@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en' xmlns:min-width="http://www.w3.org/1999/xhtml">
+<html lang='en'>
 <head>
     <title>Contact | Luka Krstik</title>
     <meta charset='UTF-8'>
@@ -29,12 +29,12 @@
       gtag('config', 'G-557TCFBMHR');
     </script>
 </head>
-<body>
+<body class="bgLine">
 <div class="container-fluid">
 
 
     <!--Navbar-->
-    <div style="list-style: none;" class="mt-2 ml-0">
+    <div style="list-style: none;" class="mt-2 ml-0 w-70">
         <nav class="navbar bg-black compensate-for-scrollbar" id="navigation-app">
             <app-nav></app-nav>
         </nav>
@@ -42,24 +42,38 @@
 
 
     <!--Contact Info-->
-    <div class="container mt-3" style="width: 100%">
-        <h1 class="header-info-b text-left">Social Media</h1>
-        <or class="text-left" style="list-style-type: none;">
-            <li class="">
-                <a href="https://www.instagram.com/lukakrstik/" class="header-info-italic hyperlink text-left">Instagram</a>
-            </li>
-            <li class="">
-                <a href="https://500px.com/p/lukakrstik?view=photos" class="header-info-italic hyperlink text-left">500px</a>
-            </li>
-            <li class="">
-                <a href="https://www.flickr.com/photos/159158532@N07/" class="header-info-italic hyperlink text-left">Flickr</a>
-            </li>
-        </or>
-        <h1 class="header-info-b text-right mr-0">Email</h1>
-        <p class="header-info-italic text-right">lukakrstik@outlook.com </p>
+    <div class="container mt-3 flex-lg-shrink-2" style="width: 100%; position: relative;">
+
+        <div class="frosted my-5">
+            <img src="images/pfp.png" style="width: 8rem; height: auto;" class="row h100 mx-auto mb-3 mt-1 rounded">
+            <div>
+                <h1 class="header-info-b text-center mx-auto mt-0">Luka (Chad)  Krstikj</h1>
+                <hr>
+            </div>
+            <div class="row">
+                <h1 class="header-info-b text-center mx-auto">Social Media</h1>
+            </div>
+            <or class="text-center" style="list-style-type: none;">
+                <li class="">
+                    <a href="https://www.instagram.com/lukakrstik/" class="header-info-italic hyperlink">Instagram</a>
+                </li>
+                <li class="">
+                    <a href="https://500px.com/p/lukakrstik?view=photos" class="header-info-italic hyperlink">500px</a>
+                </li>
+                <li class="">
+                    <a href="https://www.flickr.com/photos/159158532@N07/" class="header-info-italic hyperlink">Flickr</a>
+                </li>
+            </or>
+            <h1 class="header-info-b text-center mx-auto mt-4">Email</h1>
+            <or class="text-center" style="list-style-type: none;">
+                <li class="">
+                    <a href="mailto:luka.krstik@outlook.com" class="header-info-italic hyperlink">luka.krstik@outlook.com</a>
+                </li>
+            </or>
+        </div>
     </div>
 
 </div>
-<script src="vuejs.js"></script>
+<script src="vue/vuejs.js"></script>
 </body>
 </html>

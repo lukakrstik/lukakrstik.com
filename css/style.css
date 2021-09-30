@@ -73,6 +73,7 @@ body {
 .card-img{
     transition: transform 0.5s;
     transform: scale(1.0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 
@@ -269,10 +270,19 @@ animation: fadeIn ease 3s;
 }
 
 .frosted{
-    position: fixed;
-    bottom: 0%;
-    width:100%;
-    left:0%;
-    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
-    backdrop-filter: blur(3px);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bgLine{
+    background: url("../images/bg2.svg") no-repeat top;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.line{
 }
