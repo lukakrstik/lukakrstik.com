@@ -272,7 +272,7 @@ animation: fadeIn ease 3s;
 .frosted{
     border-radius: 1rem;
     padding: 1.5rem;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4));
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -284,5 +284,11 @@ animation: fadeIn ease 3s;
     background-position: center;
     background-attachment: fixed;
 }
-.line{
+
+.fade-col {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
 }
