@@ -278,7 +278,7 @@ animation: fadeIn ease 3s;
 }
 
 .bgLine{
-    background: url("../images/bg2.svg") no-repeat top;
+    background: url("../images/peak.jpg") no-repeat top;
     height: auto;
     background-size: cover;
     background-position: center;
