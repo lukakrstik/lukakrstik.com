@@ -1,7 +1,7 @@
 const UrlList = {
     data() {
         return {
-            fotki: 15,
+            fotki: 10,
             featured: [
                 {
                     tag: 'urba',
@@ -69,6 +69,12 @@ const UrlList = {
             ],
 
             pictures: [
+                {
+                    tag: 'port',
+                    isColor: false,
+                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2349BPT.jpg?raw=true',
+                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2349BPO.jpg?raw=true'
+                },
                 {
                     tag: 'port',
                     isColor: false,
