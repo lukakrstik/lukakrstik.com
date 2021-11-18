@@ -24,48 +24,6 @@ const UrlList = {
                     tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2600UT.jpg?raw=true',
                     olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2600UO.jpg?raw=true'
                 },
-                {
-                    tag: 'urba',
-                    isColor: true,
-                    isFeatured: true,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2571UT.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2571UO.jpg?raw=true'
-                },
-                {
-                    tag: 'port',
-                    isColor: true,
-                    isFeatured: true,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2573PT.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2573PO.jpg?raw=true'
-                },
-                {
-                    tag: 'urba',
-                    isColor: true,
-                    isFeatured: true,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2577UT.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2577UO.jpg?raw=true'
-                },
-                {
-                    tag: 'port',
-                    isColor: false,
-                    isFeatured: true ,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2325BPT.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2325BPO.jpg?raw=true'
-                },
-                {
-                    tag: 'port',
-                    isColor: false,
-                    isFeatured: true,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2349BPT.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2349BPO.jpg?raw=true'
-                },
-                {
-                    tag: 'land',
-                    isColor: false,
-                    isFeatured: true,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2355BLT.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2355BLO.jpg?raw=true'
-                },
             ],
 
             pictures: [
