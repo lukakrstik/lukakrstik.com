@@ -6,68 +6,71 @@ const UrlList = {
                 {
                     tag: 'urba',
                     isColor: true,
-                    isFeatured: true,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2591UT.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2591UO.jpg?raw=true'
+                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2486UT.webp?raw=true',
+                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2486UO.webp?raw=true'
                 },
                 {
                     tag: 'urba',
-                    isColor: true,
-                    isFeatured: true,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2598UT.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2598UO.jpg?raw=true'
+                    isColor: false,
+                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_3385UT.webp?raw=true',
+                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_3385UO.webp?raw=true'
                 },
                 {
                     tag: 'urba',
-                    isColor: true,
-                    isFeatured: true,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2600UT.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2600UO.jpg?raw=true'
+                    isColor: false,
+                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2984UT.webp?raw=true',
+                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2984UO.webp?raw=true'
                 },
             ],
 
             pictures: [
                 {
-                    tag: '',
-                    isColor: false,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2349BPT.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2349BPO.jpg?raw=true'
+                    tag: 'null',
+                    isColor: null,
+                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2355BLT.jpg?raw=true',
+                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2355BLO.jpg?raw=true'
                 },
-                {
-                    tag: 'port',
+                { 
+                    tag: 'urba', 
                     isColor: false,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2325BPT.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2325BPO.jpg?raw=true'
+                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2486UT.webp?raw=true', 
+                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2486UO.webp?raw=true' 
                 },
-                {
-                    tag: 'port',
+                { 
+                    tag: 'urba', 
+                    isColor: true,
+                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2612UT.webp?raw=true', 
+                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2612UO.webp?raw=true' 
+                },
+                { 
+                    tag: 'urba', 
+                    isColor: true,
+                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2614UT.webp?raw=true', 
+                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2614UO.webp?raw=true' 
+                },
+                { 
+                    tag: 'urba', 
                     isColor: false,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2349BPT.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2349BPO.jpg?raw=true'
+                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2885UT.webp?raw=true', 
+                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2885UO.webp?raw=true' 
+                },
+                { 
+                    tag: 'urba', 
+                    isColor: false,
+                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2984UT.webp?raw=true',
+                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2984UO.webp?raw=true'
+                },
+                { 
+                    tag: 'urba', 
+                    isColor: false,
+                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_3385UT.webp?raw=true',
+                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_3385UO.webp?raw=true' 
                 },
                 {
                     tag: 'land',
                     isColor: false,
                     tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2355BLT.jpg?raw=true',
                     olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2355BLO.jpg?raw=true'
-                },
-                {
-                    tag: 'urba',
-                    isColor: true,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2571UT.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2571UO.jpg?raw=true'
-                },
-                {
-                    tag: 'port',
-                    isColor: true,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2573PT.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2573PO.jpg?raw=true'
-                },
-                {
-                    tag: 'urba',
-                    isColor: true,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2577UT.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_2577UO.jpg?raw=true'
                 },
                 {
                     tag: 'urba',
