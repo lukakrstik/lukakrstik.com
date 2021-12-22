@@ -292,3 +292,15 @@ animation: fadeIn ease 3s;
     -o-animation: fadeIn ease 5s;
     -ms-animation: fadeIn ease 5s;
 }
+
+.bgStatic{
+    background: url("/images/bg3.svg.svg") no-repeat top;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.logoSK path {
+    fill:white;
+}
