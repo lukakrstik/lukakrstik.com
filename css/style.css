@@ -304,3 +304,17 @@ animation: fadeIn ease 3s;
 .logoSK path {
     fill:white;
 }
+
+.header-info-SK {
+    color: #FFFFFF;
+    font-size: 4vmin;
+    font-family: 'Oxygen-light', sans-serif;
+    text-decoration: none;
+}
+
+.header-info-SKhead {
+    color: #FFFFFF;
+    font-size: 6vmin;
+    font-family: 'Oxygen-light', sans-serif;
+    text-decoration: none;
+}
