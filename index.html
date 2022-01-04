@@ -35,6 +35,37 @@
 
       gtag('config', 'G-557TCFBMHR');
     </script>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 8, 2022 15:30:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
 </head>
 <body>
 <div class="container-fluid">
@@ -49,10 +80,19 @@
 
         <!--Featured Sliki-->
         <div class="mx-0 mt-3 fade-in compensate-for-scrollbar">
-            <h1 class="header-info-upload text-center my-2 mb-0 mx-auto">// Project "Skopje" //</h1>
-            <h1 class="header-info-upload text-center mt-0 mb-4 mx-auto">9/30</h1>
+            <div class="ml-3 mt-5 mr-4 w-50">
+                <h1 class="display-3 ml-1" style="color: #171717; font-family: 'Oxygen', sans-serif">Skopje</h1>
+                <h1 class="display-5 mt-0 ml-1" style="color:  #171717;font-family: 'Oxygen-light', sans-serif">Photo Exhibit</h1>
+                <h1 class="header-info-italic mt-4 ml-1" style="color: #171717; font-family: 'Oxygen-light', sans-serif">Exhibit
+                    of 30 curated photos captured in the city of Skopje, portraying the true character of the city and
+                    it's people. The city where its beauty lies in the decaying history and brutal architecture.</h1>
+                <h1 class="header-info-italic mt-1 ml-1" style="color: #171717; font-family: 'Oxygen-light', sans-serif">
+                    . . .</h1>
+                <h1 class="display-5 mt-4 mb-3 ml-1" style="color: #171717" id="timer"></h1>
+            </div>
+
             <div class="container-fluid" style="width: 95%;">
-                <!--Cards-->
+                <!--&lt;!&ndash;Cards&ndash;&gt;-->
                 <h1 class="header-info-upload text-center my-2 mx-auto">Featured Photos</h1>
                 <div class="row mx-auto" id="app-card" data-masonry='{"percentPosition": true }' style="position: relative;">
                     <template v-for="feature in featured">
