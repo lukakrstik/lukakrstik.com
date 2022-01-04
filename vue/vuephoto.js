@@ -128,12 +128,6 @@ const UrlList = {
                 },
                 {
                     tag: 'port',
-                    isColor: false,
-                    tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_1858T.jpg?raw=true',
-                    olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_1858O.jpg?raw=true'
-                },
-                {
-                    tag: 'port',
                     isColor: true,
                     tlink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_0912T.jpg?raw=true',
                     olink: 'https://github.com/lukakrstik/website-photo-pool/blob/master/images/DSC_0912O.jpg?raw=true'
